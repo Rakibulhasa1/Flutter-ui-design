@@ -3,11 +3,8 @@
 A new Flutter project.
 
 
+
 ![Simulator-Screen-Recording-iPhon](https://user-images.githubusercontent.com/55250483/189995368-b92dcc88-98f4-4687-8304-3cc20e64ce96.gif)
-
-
-
-
 
 
 ## Getting Started
