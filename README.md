@@ -1,6 +1,7 @@
 # ui_design
 
 A new Flutter project.
+![Simulator-Screen-Recording-iPhon](https://user-images.githubusercontent.com/55250483/189995368-b92dcc88-98f4-4687-8304-3cc20e64ce96.gif)
 
 
 https://user-images.githubusercontent.com/55250483/189992804-69510a23-11a2-4fe7-bbd3-af330b0b1b86.mp4
