@@ -8,6 +8,7 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromRGBO(246, 246, 246, 1),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.only(left: 14.0, right: 14, top: 20),
@@ -202,11 +203,39 @@ class MyHomePage extends StatelessWidget {
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
                               color: Color.fromARGB(255, 241, 157, 241)),
-                          child: Center(child: Text('9 AM')))
+                          child: Center(child: Text('9 AM'))),
                     ],
                   ),
                 ),
-              )
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Expanded(
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(20),
+                        topRight: Radius.circular(20)),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          'Today Activity',
+                          style: TextStyle(
+                              fontSize: 20, fontWeight: FontWeight.w600),
+                        ),
+                        Icon(Icons.more_vert)
+                      ],
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
