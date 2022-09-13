@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({Key? key}) : super(key: key);
@@ -221,16 +222,22 @@ class MyHomePage extends StatelessWidget {
                   ),
                   child: Padding(
                     padding: const EdgeInsets.all(15.0),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    child: ListView(
                       children: [
-                        Text(
-                          'Today Activity',
-                          style: TextStyle(
-                              fontSize: 20, fontWeight: FontWeight.w600),
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              'Today Activity',
+                              style: TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.w600),
+                            ),
+                            Icon(Icons.more_vert)
+                          ],
                         ),
-                        Icon(Icons.more_vert)
+                        Lottie.network(
+                            'https://assets7.lottiefiles.com/packages/lf20_HJvaTOAyKz.json')
                       ],
                     ),
                   ),
